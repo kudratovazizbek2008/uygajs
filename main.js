@@ -1,29 +1,36 @@
-class Maktab {
-    constructor(nomi, joylashuv, oquvchilar, tashkilYili) {
-        this.nomi = nomi;
-        this.joylashuv = joylashuv;
-        this.oquvchilar = oquvchilar;
-        this.tashkilYili = tashkilYili;
-    }
+// 1-masala
+// const user = {
+//     name: "Ali",
+//     profile: {
+//         age: 25,
+//         address: {
+//             city: "Tashkent",
+//             zip: "100100"
+//         }
+//     },
+//     settings: {
+//         theme: "dark"
+//     },
+//     permissions: ["read", "write"]
+// };
+//
+// const clonedUser = structuredClone(user);
+//
+// clonedUser.profile.age = 30;
+// clonedUser.settings.theme = "light";
+//
+// console.log(user.profile.age);
+// console.log(clonedUser.profile.age);
 
-    info() {
-        return `${this.nomi} maktabi ${this.joylashuv}da joylashgan. ${this.tashkilYili}-yilda ochilgan. O'quvchilar soni: ${this.oquvchilar}.`;
-    }
-}
-
-class Universitet extends Maktab {
-    constructor(nomi, joylashuv, oquvchilar, tashkilYili, fakultetlar, reyting) {
-        super(nomi, joylashuv, oquvchilar, tashkilYili);
-        this.fakultetlar = fakultetlar;
-        this.reyting = reyting;
-    }
-
-    batafsilInfo() {
-        return `${this.info()} Fakultetlar soni: ${this.fakultetlar}. Reyting: ${this.reyting}.`;
-    }
-}
-
-
-const uni = new Universitet("TATU", "Toshkent", 12000, 1955, 8, "Top 1000");
-
-console.log(uni.batafsilInfo());
+// 2-masala
+// const products = [
+//     { name: "Laptop", price: 1000 },
+//     { name: "Phone", price: 500 }
+// ];
+//
+// const newProducts = products.map(product => ({
+//     ...product,
+//     discountPrice: product.price * 0.9
+// }));
+//
+// console.log(newProducts);
